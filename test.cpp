@@ -12,7 +12,7 @@ int main()
   int i=0;
   while(i<4);
   {
-    cout<<"the valye of ayush is "<<ayush[i]<<endl;
+    cout<<"the value of ayush is "<<ayush[i]<<endl;
     i++;
 
   }
