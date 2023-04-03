@@ -8,12 +8,9 @@ using namespace std;
 
 int main()
  {
-    int a=1;
-    int b=2;
-    int c=7;
-    cin>>a;
-    cin>>b;
-    cin>>c;
-   //cout<<(a+b+c)<<endl; 
+    int a=1 , b=2 , c=7;
+    
+    
+   cout<<(a+b+c)<<endl; 
     return 0;    
 }
