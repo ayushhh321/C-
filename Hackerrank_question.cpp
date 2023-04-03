@@ -1,3 +1,6 @@
+
+//all rights reserved to https://github.com/ayushhh321
+
 #include <cmath>
 #include <cstdio>
 #include <vector>
