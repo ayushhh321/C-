@@ -11,5 +11,5 @@ int main() {
     int b=2;
     int c=7;
    cout<<(a+b+c)<<endl; 
-    return 0;
+    return 0;    
 }
