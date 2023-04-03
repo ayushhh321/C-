@@ -21,14 +21,11 @@
 //     return 0;
 // }
 
-#include<iostream>
+#include <iostream>
+#include <cstdio>
 using namespace std;
 
-int main()
-{
-    int age;
-    scanf("age");
-    printf("hello");
-
+int main() {
+    
     return 0;
 }
