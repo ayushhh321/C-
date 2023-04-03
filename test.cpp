@@ -11,6 +11,9 @@ int main()
     int a=1;
     int b=2;
     int c=7;
-   cout<<(a+b+c)<<endl; 
+    cin>>a;
+    cin>>b;
+    cin>>c;
+   //cout<<(a+b+c)<<endl; 
     return 0;    
 }
