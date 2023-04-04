@@ -1,8 +1,4 @@
-#include <iostream>
-// #include <cstdio>
-// using namespace std;
+//int a= 4 , b=3;
+    // //int c = (a*5)+b;
 
-// int main() {
-    
-//     return 0;
-// }
+    // int c = ((((a*5)+b)-45)+87);

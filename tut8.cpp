@@ -41,10 +41,10 @@ delete this abhi comment kr de rhe tum run krke dekh lena revison ke time*/
     /*operator precendce - basically function likhne hote hai isme visit this wesbite to know kis symbol(+ - *) ka kunsa bracket lgta watch video
     to revise*/ 
 
-    int a= 4 , b=3;
-    //int c = (a*5)+b;
+    // int a= 4 , b=3;
+    // //int c = (a*5)+b;
 
-    int c = ((((a*5)+b)-45)+87);
+    // int c = ((((a*5)+b)-45)+87);
     
     return 0;
 }
