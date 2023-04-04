@@ -31,6 +31,14 @@ using namespace std;
 int main() {
     int a;
     cin>>a;
+    long b;
+    cin>>b;
+    char d; 
+    cin>>d;
+    float c;
+    cin>>c;
+    double e;
+    cin>>e;
 
     return 0;
 }
