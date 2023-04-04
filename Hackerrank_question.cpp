@@ -31,6 +31,13 @@ using namespace std;
 int main() {
     int a=3;
     cout<<a<<endl;
-    
+    long b;
+    cout<<b<<endl;
+    char c;
+    cout<<c<<endl;
+    float d;
+    cout<<d<<endl;
+    double e;
+    cout<<e<<endl;
     return 0;
 }
