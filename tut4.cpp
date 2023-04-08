@@ -21,6 +21,7 @@ int main(){
     // boolean for true it write 1 an dfalse it write 0
     cout<<"\n value of ayush is "<<false;
 
+    // ....
 
     
     return 0;
