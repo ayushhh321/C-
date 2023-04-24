@@ -1,6 +1,6 @@
 # Cpp-insertion
 
-I have taken the #100DaysOfCodeChallenge, committing to coding for at least an hour every day for 100 days. I have chosen this challenge to improve my coding skills and build a habit of consistent coding. I will be documenting my progress on this GitHub repository and sharing it on Linkedln using the hashtag #100daysofcodechallenge.
+Here I chit chat with my cpp code If you love trash you can refer this repo all the best 
 
 This repo is all about cpp daily code .
 Changes done on my local will reflect on this repo.
