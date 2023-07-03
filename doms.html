@@ -1,0 +1,56 @@
+// function start()
+//  {
+//  var inputColor = prompt( "Enter a color name for the " +
+//  "background of this page", "" ); 
+ 
+ 
+// } // end function start
+
+//  window.addEventListener( "load", start, false ); 
+
+ 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Example</title>
+  <style>
+    .results {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <button id="myButton">Click me</button>
+  
+  <form>
+    <label>
+      <input type="radio" name="option" value="lowercase" checked> Lowercase
+    </label>
+    <label>
+      <input type="radio" name="option" value="uppercase"> Uppercase
+    </label>
+  </form>
+  
+  <div class="results" id="resultBox"></div>
+
+  <script>
+    const button = document.getElementById('myButton');
+    const resultBox = document.getElementById('resultBox');
+    const radios = document.querySelectorAll('input[name="option"]');
+
+    button.addEventListener('click', () => {
+      const caption = button.innerText;
+      const selectedOption = document.querySelector('input[name="option"]:checked').value;
+      
+      if (selectedOption === 'lowercase') {
+        resultBox.textContent = caption.toLowerCase();
+      } else if (selectedOption === 'uppercase') {
+        resultBox.textContent = caption.toUpperCase();
+      }
+    });
+  </script>
+</body>
+</html>
