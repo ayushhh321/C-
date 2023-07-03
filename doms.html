@@ -1,4 +1,4 @@
-// function start()
+<!-- // function start()
 //  {
 //  var inputColor = prompt( "Enter a color name for the " +
 //  "background of this page", "" ); 
@@ -6,51 +6,139 @@
  
 // } // end function start
 
-//  window.addEventListener( "load", start, false ); 
+//  window.addEventListener( "load", start, false );  -->
 
  
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
-  <title>Button Example</title>
+  <title>Button Results</title>
   <style>
-    .results {
-      margin-top: 10px;
+    #results {
+      width: 300px;
+      height: 100px;
+      border: 1px solid black;
       padding: 10px;
-      border: 1px solid #ccc;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <button id="myButton">Click me</button>
-  
-  <form>
-    <label>
-      <input type="radio" name="option" value="lowercase" checked> Lowercase
-    </label>
-    <label>
-      <input type="radio" name="option" value="uppercase"> Uppercase
-    </label>
-  </form>
-  
-  <div class="results" id="resultBox"></div>
+  <h1>Button Results</h1>
+  <button onclick="displayResults('good')">Good Results</button> -->
+  <!-- <button onclick="displayResults('bad')">Bad Results</button> -->
+  <!-- <br><br>
+  <button onclick="toUppercase()">Uppercase</button>
+  <button onclick="toLowercase()">Lowercase</button>
+  <br><br>
+  <button onclick="reset()">Reset</button>
+  <div id="results"></div>
 
   <script>
-    const button = document.getElementById('myButton');
-    const resultBox = document.getElementById('resultBox');
-    const radios = document.querySelectorAll('input[name="option"]');
+    var buttonName = '';
+    var currentCase = '';
 
-    button.addEventListener('click', () => {
-      const caption = button.innerText;
-      const selectedOption = document.querySelector('input[name="option"]:checked').value;
-      
-      if (selectedOption === 'lowercase') {
-        resultBox.textContent = caption.toLowerCase();
-      } else if (selectedOption === 'uppercase') {
-        resultBox.textContent = caption.toUpperCase();
-      }
-    });
+    function displayResults(name) {
+      buttonName = name;
+      updateResults();
+    }
+
+    function updateResults() {
+      var resultsDiv = document.getElementById('results');
+      resultsDiv.textContent = buttonName;
+      resultsDiv.className = currentCase;
+    }
+
+    function toUppercase() {
+      currentCase = 'uppercase';
+      updateResults();
+    }
+
+    function toLowercase() {
+      currentCase = 'lowercase';
+      updateResults();
+    }
+
+    function reset() {
+      buttonName = '';
+      currentCase = '';
+      updateResults();
+    }
   </script>
 </body>
-</html>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Button Results</title>
+  <style>
+    #results {
+      width: 300px;
+      height: 100px;
+      border: 1px solid black;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Button Results</h1>
+  <button onclick="displayResults('good results')">Good Results</button>
+  <button onclick="displayResults('bad results')">Bad Results</button>
+  <br><br>
+  <script>
+    var buttonName = '';
+    var currentCase = '';
+
+    function displayResults(name) {
+      buttonName = name;
+      updateResults();
+    }
+
+    function updateResults() {
+      var resultsDiv = document.getElementById('results');
+      resultsDiv.textContent = buttonName;
+      applyCase(resultsDiv);
+    }
+
+    function toUppercase() {
+      currentCase = 'uppercase';
+      updateResults();
+    }
+
+    function toLowercase() {
+      currentCase = 'lowercase';
+      updateResults();
+    }
+
+    function applyCase(element) {
+      if (currentCase === 'uppercase') {
+        element.style.textTransform = 'uppercase';
+      } else if (currentCase === 'lowercase') {
+        element.style.textTransform = 'lowercase';
+      } else {
+        element.style.textTransform = 'none';
+      }
+    }
+  </script>
+  <button onclick="toUppercase()">Uppercase</button>
+  <button onclick="toLowerCase()">Lowercase</button>
+  <br><br>
+  <button onclick="reset()">Reset</button>
+  <div id="results"></div>
+
+  
+    <script>
+
+    function reset() {
+      buttonName = '';
+      currentCase = '';
+      updateResults();
+    }
+  </script>
+</body>
+</html> -->
+
