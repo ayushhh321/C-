@@ -11,30 +11,30 @@
       margin-bottom: 10px;
     }
 
-    .checkbox-container {
+    .radio-container {
       display: flex;
       align-items: center;
     }
 
-    .checkbox-container label {
+    .radio-container label {
       margin-right: 10px;
     }
   </style>
 </head>
 <body>
   <h1>Button Results</h1>
-  <button onclick="displayResults('good result')">Good Result</button>
-  <button onclick="displayResults('bad result')">Bad Result</button>
+  <button onclick="displayResults('good')">Good Result</button>
+  <button onclick="displayResults('bad')">Bad Result</button>
   <br><br>
   <div id="results"></div>
   <br>
-  <div class="checkbox-container">
+  <div class="radio-container">
     <label>
-      <input type="checkbox" onclick="toUppercase()">
+      <input type="radio" name="caseOption" onclick="toUppercase()">
       Uppercase
     </label>
     <label>
-      <input type="checkbox" onclick="toLowerCase()">
+      <input type="radio" name="caseOption" onclick="toLowerCase()">
       Lowercase
     </label>
   </div>
