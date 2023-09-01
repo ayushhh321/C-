@@ -1,8 +1,0 @@
-const userInputArray = [];
-
-for (let i = 0; i < 10; i++) {
-  const element = prompt(`Enter element ${i + 1}:`);
-  userInputArray.push(element);
-}
-
-console.log('User Input Array:', userInputArray);
