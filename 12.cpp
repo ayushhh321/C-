@@ -5,7 +5,10 @@ using namespace std;
 
 int main()
 {
-   
+
+    int nums;
+    nums[];
+
    
     return 0;
 
