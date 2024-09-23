@@ -1,3 +1,6 @@
+//set data structure accepts only unique elements
+//maps used to store key value pair
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -90,8 +93,55 @@ cout<<*(it)<<""//2 chor ke
 
 //accessing from ending using iterators
 vector<int>::iterator it=ayush5.end();
+it--;
+cout<<*(it)<<"";
 
+//normal acessing using index
+cout<<ayush5[2]<<endl; //44
+
+//printing an vector
+
+for(vector<int>::iterator it=ayush5.begin(); it !=ayush5.end(); it++) //contain start kaha se krna , kab tak krna , increment
+{
+  cout<<*(it)<<endl; //22,33,44,55
 }
+
+//now itta likhne ke jagah use auto auto khud se hi data type deal kr lega auto assign krke
+
+for(auto it=ayush5.begin(); it !=ayush5.end(); i++){
+  cout<<*(it)<<endl; //22,33,44,55
+}
+
+//deleting an element
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 int main(){
 print(); //normal call kr diya print ko
