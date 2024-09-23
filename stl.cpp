@@ -155,6 +155,103 @@ void explainlist(){
 }
 
 
+//deque
+void dequeLearn(){
+deque<int>dq1;
+dq1.push_back(1);//{1}
+dq1.push.back(2);//{1,2}
+dq1.emplace.back(4);//{1,2,4}
+dq1.push_front(7);//{7,1,2,4}
+
+dq1.pop_back();//{7,1,2}
+dq1.pop_front();//{1,2}
+
+//baki sab same as vector
+}
+
+
+//stacks- it words on theory of LIFO isme indexing nahi hoti yaha sirf top , push and pop hota hai O(1)
+
+stack<int> st1;
+st1.push(1);//{1}
+st1.push(2);//{2,1}
+st1.push(3);//{3,2,1}
+st1.push(4);//{4,3,2,1}
+
+cout<<st1.top()//4  st[2] this is invalid bcz indexing nahi hoti
+
+st1.pop()//3,2,1
+
+cout<<st.size()//3
+
+stack<int> st1,st2;
+st1.swap(st2)
+
+//queue-it works on the concept of FIFO, similar to stack but it is FIFO. O(1) . ISME CHIZE LINE ME JATI HAI
+
+void queueLearn(){
+queue<int>q1;
+q1.push_back(1)//{1}
+q1.push_back(2)//{1,2}
+
+q.back+=5;
+
+cout<<q1.back()//last element me 5 add hoga 5+2=7
+
+//now q1 become 1,7
+
+cout<<q1.front()//1
+q1.pop()//7
+
+//now q1 has only 7
+
+cout<<q1.front()//7
+
+}
+
+
+//Priority queue - It is tree data structure . isme kaise bhi data dalo sabse bada number humeesha top pr rhega
+
+void explainPq() { 
+  priority_queue<int>pq;
+pq.push(5); // {5}
+pq.push(2); // (5, 2)
+pq.push(8); // (8, 5, 2}
+pq.emplace(10); // (10, 8, 5, 2)
+
+cout << pq.top(); // prints 10
+pq.pop(); // {8, 5, 2}
+
+cout <<<< pq.top(); // prints 8
+// size swap empty function same as others
+
+// Minimum Неар- is like sabse bada sabse niche ulta krdo
+priority_queue<int, vector<int>, greater<int>> pq;
+pq.push(5); // (5)
+pq.push(2); // {2, 5}
+pq.push(8); // {2, 5, 8}
+pq.emplace(10); // (2, 5, 8, 10)
+cout << pq.top(); // prints 2
+}
+//push and pop - log n
+//top - o(1)
+
+
+//set -store unique elements in sorted way. 
+
+void explainset(){
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
