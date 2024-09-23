@@ -113,14 +113,46 @@ for(auto it=ayush5.begin(); it !=ayush5.end(); i++){
 }
 
 //deleting an element
+//use erase to delete
+//vectror<int> ayush6={12,13,14,15,16,17}
+ayush6.erase(ayush.begin()+1)//12,14,15,16,17
+ayush6.erase(ayush.begin()+2,ayush.begin()+4)//12,13,15,17
 
 
+//insert funtion
+vector<int> v(2,100)//2 size and 100 100
+v.insert(v.begin(),300)//300 100 100
+v.insert(v.begin()+1,2,10)//after one place , how many times , the value to add //300 10 10 100 100
+
+//size function
+vector<int> ayush7(23,34)
+cout<<ayush7.size();//2
+
+//pop last element
+//10,20
+v.pop_back()//10
+
+//swap
+//v1-10,20 and v2-39,30
+v.swap(v2)//v1-39,30 and v2-10,20
+
+//erases whole
+v.clear();
 
 
+//list = same as vector , dyanimc can do all frontrow functions
 
+void explainlist(){
+  list<int> list1;
+  list1.push_back(3);//{3}
+  list1.emplace_back(4);//{3,4}
 
+  //yaha pr insert ka use krke front me add nahi krna hota yaha funxtion hota hai
 
+  list1.push_front(5);//{5,3,4}
 
+  //rsst funtion same as vector
+}
 
 
 
