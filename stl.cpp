@@ -241,8 +241,41 @@ cout << pq.top(); // prints 2
 
 void explainset(){
 
+set<int> st1;
+st.insert(1);
+st.insert(2);
+st.insert(3);
+st.insert(4);//1,2,3,4
+st.insert(4);//1,2,3,4 only unqiue element
+
+
+//1,2,3,4,5
+auto it=st.find(3); 
+
+//1,2,3,4,5
+auto it-st.find(6);//will written after end
+
+st.erase(5)//1,2,3,4
+
+//unique hai toh element ka occurenece check krnahai hai toh count use krenge like it will give 0 and 1 mns true or false
+
+int cnt = st.count(1)//true or false
+
+//erasing
+
+//1,2,3,4,5
+
+auto it1 = st.find(2);
+auto it2 = st.find(4);
+st.erase(it1,it2)//after erase it will delete btw 2 and 4 also 2 not 4 like start but not end . 1,4,5
+
+
 }
 
+//Unordered set - Unique element but not sorted . O(1)
+//everything as set
+
+//MAPS
 
 
 
