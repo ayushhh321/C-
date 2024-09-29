@@ -188,3 +188,37 @@
 // cout<<largestelement;
 
 // }
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    string s;
+    cin >> s;
+    
+    vector<char> alpha;
+    int sum = 0;
+    
+    // Traverse the input string
+    for(char ch: s){
+        if(isdigit(ch)){  // Check if the character is a digit
+            sum += ch - '0';  // Convert the character to its integer value and add to sum
+        } else if(isalpha(ch)){  // Check if the character is an alphabet
+            alpha.push_back(ch);  // Add the alphabet to the vector
+        }
+    }
+    
+    // Sort the alphabetic characters
+    sort(alpha.begin(), alpha.end());
+    
+    // Print the sorted alphabetic characters
+    for(char ch: alpha){
+        cout << ch;
+    }
+    
+    // Print the sum of the digits
+    cout << sum << endl;
+    
+    return 0;
+}
