@@ -119,3 +119,26 @@ int main() {
    return 0;
    
 }
+//removing speacial char and numbers from string
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string str;
+    getline(cin, str);
+    
+    vector<char> result;  // Using vector to store characters
+    for (char ch : str) {
+        if (isalpha(ch)) {
+            result.push_back(ch);  // Add only alphabetic characters
+        }
+    }
+
+    // Output the result from vector
+    for (char ch : result) {
+        cout << ch;
+    }
+    cout << endl;  // To add a newline after output
+
+    return 0;
+}
