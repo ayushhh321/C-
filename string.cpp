@@ -58,3 +58,64 @@ int white_spaces=0;
 
     return 0;
 }
+
+//finding ASCII values
+
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+   char input;
+   cin>>input;
+   
+   int sum;
+   sum=int(input);//direct funtion
+   cout<<sum;
+    return 0;
+}
+
+//removing all the vowels
+
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+   string str;
+   getline(cin,str);
+   
+   for(int i=0 ; i<str.size();i++){
+       str[i]=tolower(str[i]);
+   }
+   vector<char> result;
+   for(char ch: str){
+       if(ch !='a' && ch !='e' && ch !='i' && ch !='o' && ch !='u'){
+           result.push_back(ch);
+       }
+   }
+   for(char ch: result){
+       cout<<ch;
+   }
+   return 0;
+   
+}
+
+//removing white spaces
+
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+ string str;
+ getline(cin,str);
+ vector<char> result;
+ for(char ch: str){
+     if(ch !=' '){
+         result.push_back(ch);
+     }
+ }
+ for(char ch: result){
+     cout<<ch;
+ }
+   return 0;
+   
+}
