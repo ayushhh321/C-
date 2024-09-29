@@ -157,3 +157,134 @@ int main() {
 
     return 0;
 }
+
+//reversing word from the string 
+
+#include<bits/stdc++.h>
+using namespace std;
+string result(string s)
+{
+    int left = 0;
+    int right = s.length()-1;
+    
+    string temp="";
+    string ans="";
+    
+    //Iterate the string and keep on adding to form a word
+    //If empty space is encountered then add the current word to the result
+    while (left <= right) {
+        char ch= s[left];
+        if (ch != ' ') {
+            temp += ch;
+        } else if (ch == ' ') {
+            if (ans!="") ans = temp + " " + ans;
+            else ans = temp;
+            temp = "";
+        }
+        left++;
+    }
+    
+    //If not empty string then add to the result(Last word is added)
+    if (temp!="") {
+        if (ans!="") ans = temp + " " + ans;
+        else ans = temp;
+    }
+    
+    return ans;    
+}
+int main()
+{
+    string st="TUF is great for interview preparation";
+    cout<<"Before reversing words: "<<endl;
+    cout<<st<<endl;
+    cout<<"After reversing words: "<<endl;
+    cout<<result(st);
+    return 0;
+}
+
+// Let's break down how the code you provided processes the string step-by-step, specifically focusing on the example string "here is me".
+
+// Initial Setup
+// String: s = "here is me"
+// Variables:
+// left = 0
+// right = s.length() - 1 = 11 (the last index of the string)
+// temp = "" (to store the current word)
+// ans = "" (to store the final reversed string)
+// Iterating Through the String
+// The loop runs as long as left <= right. The character at index left is checked at each iteration.
+
+// First Iteration (left = 0)
+// Character: s[0] is 'h'.
+// Since 'h' is not a space, it gets added to temp.
+// temp = "h"
+// Increment left: left becomes 1.
+// Second Iteration (left = 1)
+// Character: s[1] is 'e'.
+// 'e' is added to temp.
+// temp = "he"
+// Increment left: left becomes 2.
+// Third Iteration (left = 2)
+// Character: s[2] is 'r'.
+// 'r' is added to temp.
+// temp = "her"
+// Increment left: left becomes 3.
+// Fourth Iteration (left = 3)
+// Character: s[3] is 'e'.
+// 'e' is added to temp.
+// temp = "here"
+// Increment left: left becomes 4.
+// Fifth Iteration (left = 4)
+// Character: s[4] is a space ' '.
+// Since ch is a space, the current word stored in temp is added to ans:
+// Since ans is empty, ans = "here"
+// temp is reset to an empty string:
+// temp = ""
+// Increment left: left becomes 5.
+// Continuing with the Next Words
+// Sixth Iteration (left = 5)
+// Character: s[5] is 'i'.
+// 'i' is added to temp.
+// temp = "i"
+// Increment left: left becomes 6.
+// Seventh Iteration (left = 6)
+// Character: s[6] is 's'.
+// 's' is added to temp.
+// temp = "is"
+// Increment left: left becomes 7.
+// Eighth Iteration (left = 7)
+// Character: s[7] is a space ' '.
+// Since ch is a space, the current word stored in temp is added to ans:
+// ans = "is here"
+// temp is reset to an empty string:
+// temp = ""
+// Increment left: left becomes 8.
+// Ninth Iteration (left = 8)
+// Character: s[8] is 'm'.
+// 'm' is added to temp.
+// temp = "m"
+// Increment left: left becomes 9.
+// Tenth Iteration (left = 9)
+// Character: s[9] is 'e'.
+// 'e' is added to temp.
+// temp = "me"
+// Increment left: left becomes 10.
+// Last Step
+// Eleventh Iteration (left = 10)
+// Character: s[10] is out of bounds for the current string length (left will increment until it is greater than right).
+// The loop condition fails (left <= right becomes false) and the loop exits.
+// Final Addition
+// After exiting the loop, we check if temp is not empty. Here, temp = "me":
+
+// Since ans is not empty, it becomes:
+// ans = "me is here"
+// Final Output
+// Thus, the final reversed string is ans = "me is here".
+
+// Summary
+// The while loop iterates through the string character by character.
+// When a space is encountered, it indicates the end of a word. The current word (temp) is added to the result (ans).
+// The process continues until all characters are processed.
+// The left index moves through the string to the end, and the final string is bu
+
+
