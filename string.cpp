@@ -202,6 +202,29 @@ int main()
     return 0;
 }
 
+//other approach by ronit
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    
+    string str;
+    getline(cin,str);
+    
+    vector<string> ayush;string temp="";
+    for(int i=0;i<str.length();i++){
+        if(str[i]==' '){
+            ayush.push_back(temp);temp="";
+        }
+        else temp+=str[i];
+    }
+    ayush.push_back(temp);
+    for(int i=ayush.size()-1;i>=0;i--){
+    cout<<ayush[i]<<" ";
+    }
+    return 0;
+}
+
 // Let's break down how the code you provided processes the string step-by-step, specifically focusing on the example string "here is me".
 
 // Initial Setup
@@ -287,4 +310,58 @@ int main()
 // The process continues until all characters are processed.
 // The left index moves through the string to the end, and the final string is bu
 
+
+//To find an str2 inside str1 substring inside string
+//this can be done using library
+//tofind() - auto presentorNot=str1.find(str2)
+#include <iostream>
+using namespace std;
+ 
+int main() {
+  string str1 = "takeuforward";
+  string str2 = "forward";
+  auto presentorNot = str1.find(str2);
+  cout <<"The substring starts from the index: " <<presentorNot << endl;
+  return 0;
+}
+
+//Problem Statement: Write a  program to change the case (lower to upper and upper to lower cases) of each character of a given string.
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+  string str;
+  getline(cin,str);
+  string result;
+  for(int i=0;i<str.size();i++){
+      if(str[i]>='A' && str[i]<='Z'){
+          str[i]=tolower(str[i]);
+          result+=str[i];
+      } else if(str[i]>='a' && str[i]<='z'){
+          str[i]=toupper(str[i]);
+          result+=str[i];
+      }
+  }
+  cout<<result;
+  return 0;
+}
+
+//sort an string
+
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+ 
+ string str;
+ getline(cin,str);
+ 
+ sort(str.begin(),str.end());
+ cout<<str;
+ 
+ 
+ 
+  return 0;
+}
 

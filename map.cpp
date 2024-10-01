@@ -250,3 +250,41 @@ int main() {
 
     return 0;
 }
+
+//fibonachi series
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;  // Number of terms to generate
+    
+    vector<int> result;
+    
+    // Handle edge cases for small values of n
+    // if (n >= 1) result.push_back(0);  // First term
+    // if (n >= 2) result.push_back(1);  // Second term
+    
+    int firstterm = 0;
+    int secondterm = 1;
+    int curr;
+    result.push_back(firstterm);
+    result.push_back(secondterm);
+    // Loop starts from 2 as the first two terms are already pushed
+    for (int i = 2; i < n; i++) {
+        curr = firstterm + secondterm;
+        firstterm = secondterm;
+        secondterm = curr;
+        result.push_back(curr);
+    }
+
+    // Output the result
+    for (int i : result) {
+        cout << i << " ";  // Add space between numbers
+    }
+    
+    return 0;
+}
+
+//
